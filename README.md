@@ -52,17 +52,6 @@ The virtual lab uses a custom isolated **NAT Network** configuration to enable s
      * **Gateway:** `10.0.0.1`
      * **DNS Server:** `8.8.8.8`
 
-### Phase 3: Target Virtual Machines Setup
-
-#### 1. Windows 10 Virtual Machine
-* **IP Address:** `10.0.0.10`
-* **Network Settings:** Attached to **NAT Network** (`NatNetwork`), Adapter Type `Intel PRO/1000 MT Desktop`, with Promiscuous Mode set to **Allow All**.
-* **Management:** Maintained baseline snapshots (e.g., Snapshot 1) for lab rollbacks.
-
-#### 2. Android Virtual Machine (Optional Target)
-* **IP Address:** `10.0.0.9`
-* **Display Settings:** Configured Graphics Controller to `VBoxVGA` and disabled 3D Acceleration (`Disable 3D Acceleration`).
-* **Network Details:** Configured static IP settings with IP address `10.0.0.9`, Gateway `10.0.0.1`, Network prefix length `24`, and DNS servers `8.8.8.8` / `10.0.0.1`.
 
 ---
 
